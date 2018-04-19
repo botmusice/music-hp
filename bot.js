@@ -26,7 +26,7 @@ var prefix = "!";
 
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const discord_token = "NDA1NzgyNjAwOTQ3NTk3MzEy.DYn0Zg.4E135ItdRAdsFIXDIU4GyW0yZ7E";
+const discord_token = process.env.BOT_TOKEN;
 client.login(discord_token);
 client.on('ready', function() {
 	console.log(`i am ready ${client.user.username}`);
@@ -248,4 +248,4 @@ client.on('message', function(message) {
 		return str.toLowerCase().indexOf('youtube.com') > -1;
 	}
 });
-client.login("NDA1NzgyNjAwOTQ3NTk3MzEy.DYn0Zg.4E135ItdRAdsFIXDIU4GyW0yZ7E"); 
+client.login(process.env.BOT_TOKEN); 
