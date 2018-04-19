@@ -33,7 +33,8 @@
     "canvas": "1.6.10",
     "get-youtube-id": "1.0.0",
     "ffmpeg-binaries": "3.2.2-3",
-    "ytdl-core": "0.20.2",
+    "ytdl-core": "0.20.2",    
+    "fs": "0.0.1-security",
     "request": "2.81.0"
   }
 
