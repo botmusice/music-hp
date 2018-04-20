@@ -20,6 +20,77 @@ client.on('ready', () => {
    console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
 });
 
+client.on('message', message => {
+var prefix = "#";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 410835593451405312)
+return;
+if (message.content.startsWith(prefix + 'dnd')) {
+  if (message.author.id !== '234454368072630283') return message.react('⚠')
+client.user.setStatus('dnd');  
+message.react("✅")
+}
+                        
+ });
+
+
+client.on('message', message => {
+var prefix = "#";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 410835593451405312)
+return;
+
+
+if (message.content.startsWith(prefix + 'online')) {
+  if (message.author.id !== '234454368072630283') return message.react('⚠')
+  client.user.setStatus('online');  
+message.react("✅")
+}
+                        
+ });
+
+
+client.on('message', message => {
+var prefix = "#";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 428733432731009024)
+return;
+if (message.content.startsWith(prefix + 'idle')) {
+   if (message.author.id !== '234454368072630283') return message.react('⚠')
+client.user.setStatus('idle');  
+message.react("✅")
+}
+                        
+ });
+
+
+client.on('message', message => {
+var prefix = "#";
+
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 428733432731009024)
+return;
+
+
+if (message.content.startsWith(prefix + 'offline')) {
+    if (message.author.id !== '234454368072630283') return message.react('⚠')
+client.user.setStatus('invisible');  
+message.react("✔")
+}
+                        
+ });
+ 
 
 client.on('message', message => {
     var prefix = "+";
@@ -27,7 +98,7 @@ client.on('message', message => {
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
       var argresult = args.join(' ');
-      if (message.author.id == 410835593451405312) return;
+      if (message.author.id == 428733432731009024) return;
     
     
     if (message.content.startsWith(prefix + 'playing')) {
